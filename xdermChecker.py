@@ -1,7 +1,7 @@
 import requests
 import subprocess
 
-resp = requests.get('https://api.myip.com/')
+resp = requests.get('https://api.ipify.org/?format=json')
 if resp.status_code == 200 :
     respJSON = resp.json()
     if respJSON['ip'] != '' :
