@@ -4,7 +4,7 @@ import subprocess
 resp = requests.get('https://api.myip.com/')
 if resp.status_code == 200 :
     respJSON = resp.json()
-    if respJSON['ip'] != '101.50.3.73' :
+    if respJSON['ip'] != '' :
         process = subprocess.Popen(['xderm-mini', 'start'], 
                            stdout=subprocess.PIPE,
                            universal_newlines=True)
