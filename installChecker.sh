@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Installing..."
-url="https://raw.githubusercontent.com/kufhed/xderm-checker/main"
-wget -O /root/xdermChecker.py $url/xdermChecker.py -q
+wget -O /root/xdermChecker.py https://raw.githubusercontent.com/kufhed/xderm-checker/main/xdermChecker.py -q
 #write out current crontab
 crontab -l > mycron
 #echo new cron into cron file
